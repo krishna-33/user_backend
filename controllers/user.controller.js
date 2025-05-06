@@ -102,7 +102,8 @@ module.exports = {
         await t.commit();
         return sendErrorResponse(res, USER_NOT_FOUND, NOT_FOUND);
       }
-      const updateData = req.body;
+
+      const {email, ...updateData} = req.body;
       if (req.file) {
         updateData.profilePicture = `http://localhost:${process.env.SERVER_PORT}/uploads/${req.file.filename}`;
       }
