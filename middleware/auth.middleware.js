@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 const { users: Users } = require("../models");
 const { NO_ACCESS, USER_NOT_FOUND, INVALID_TOKEN } = require("../utils/message");
 const { sendErrorResponse } = require("../utils/response");
-const { ERROR } = require("../utils/status");
+const { ERROR, UNAUTHORIZED } = require("../utils/status");
 
 
 module.exports = async function (req, res, next) {
