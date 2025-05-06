@@ -5,7 +5,7 @@ const { sendErrorResponse } = require("../utils/response");
 const { ERROR, UNAUTHORIZED } = require("../utils/status");
 
 
-module.exports = async function (req, res, next) {
+module.exports = async (req, res, next) => {
   const token = req.header("Authorization").split(' ')[1];
   
   if (!token) {
