@@ -15,5 +15,9 @@ Run sidders: npm run seeders
 
 Run project: npm run dev
 
+
 # Admin Credentials
-email: admin@gmail.com password: admin123
+email: admin@example.com password: admin123
+
+# User Credentials
+email: user@example.com password: user123
